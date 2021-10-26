@@ -24,6 +24,10 @@ body{
 .dec-non{
     text-decoration: none;
 }
+
+.margin-b{
+    margin-bottom: 10px;
+}
 /* END COMMON */
 
 /* MAIN */
@@ -32,23 +36,6 @@ body{
     height: calc(100vh - 100px);
 
     background-color: pink;
-}
-
-.nav{
-    height: 100%;
-    width: 200px;
-    padding: 10px;
-    flex-direction: column;
-    overflow: hidden;
-
-    background-color: royalblue;
-}
-
-.content{
-    height: 100%;
-    width: calc(100% - 200px);
-
-    background-color: chartreuse;
 }
 
 .upgrade{
@@ -60,13 +47,87 @@ body{
     right: 0;
 }
 
+/* upgrade nedia */
+@media screen and (max-width: 600px) {
+    .upgrade{
+        width: calc(100% - 40px);
+    }
+}
+
+/* nav */
+.nav{
+    height: 100%;
+    width: 200px;
+    padding: 10px;
+    flex-direction: column;
+    overflow: hidden;
+
+    background-color: royalblue;
+}
+
+.logo{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.logo .logo-small{
+    display: none;
+}
+
 .playlist{
     flex-grow: 1;
     overflow-y: auto;
 }
 
+.nav li{
+    margin-bottom: 5px;
+}
+
 .install-app{
     border-bottom: 2px solid #4b4b4b;
+    padding: 4px 0px;
+    margin-bottom: 6px;
+}
+
+/* nav media */
+@media screen and (max-width: 600px) {
+    .nav{
+        width: 40px;
+        padding: 3px;
+        position: relative;
+    }
+
+    .logo .logo-big{
+        display: none;
+    }
+
+    .logo .logo-small{
+        display: block;
+    }
+
+    .nav-text{
+        display: none;
+    }
+
+    .user{
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+/* content */
+.content{
+    height: 100%;
+    width: calc(100% - 200px);
+
+    background-color: chartreuse;
+}
+
+/* content nedia */
+@media screen and (max-width: 600px) {
+    .content{
+        width: calc(100% - 40px);
+    }
 }
 /* END MAIN */
 
