@@ -42,6 +42,11 @@ body{
     list-style-type: none;
 }
 
+.margin-row{
+    margin: 10px;
+
+}
+
 .margin{
     margin: 0% 3%;
 }
@@ -50,12 +55,16 @@ body{
     margin-bottom: 10px;
 }
 
+.padding-side{
+    padding: 0px 10px;
+}
+
 img{
     width: 100%;
 }
 
 .barr{
-    width: 100%;
+    width: 40%;
     height: 4px;
     background-color: #5a5a5a;
     /* display: inline-block; */
@@ -76,18 +85,24 @@ img{
 .font-12{
     font-size: 12px;
 }
+
+.white{
+    color: #ffffff;
+}
+
+.grey{
+    color: #7c7e83;
+}
 /* END COMMON
 
 /* MAIN */
 .main-container{
     width: 100%;
     height: calc(100vh - 100px);
-
-    background-color: pink;
 }
 
 .upgrade{
-    width: calc(100% - 200px);
+    width: calc(100% - 170px);
     height: 60px;
     background-color:rgba(0, 0, 0, 50%);
     position: fixed;
@@ -114,11 +129,11 @@ img{
 /* nav */
 .nav{
     height: 100%;
-    width: 200px;
+    width: 170px;
     padding: 10px;
     overflow: hidden;
 
-    background-color: royalblue;
+    background-color: #000000;
 }
 
 .logo{
@@ -128,6 +143,23 @@ img{
 
 .logo .logo-small{
     display: none;
+}
+
+.library-icon{
+    font-weight: 800;
+}
+
+.plus{
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #a3a3a3;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+
 }
 
 .playlist{
@@ -143,6 +175,11 @@ img{
     border-bottom: 2px solid #4b4b4b;
     padding: 4px 0px;
     margin-bottom: 6px;
+}
+
+.fa-user-circle{
+    background-color: #808080;
+    border-radius: 10px;
 }
 
 /* nav media */
@@ -174,9 +211,44 @@ img{
 /* content */
 .content{
     height: 100%;
-    width: calc(100% - 200px);
+    width: calc(100% - 170px);
+    overflow-y: auto;
+    background-color: #141922;
+}
 
-    background-color: chartreuse;
+.content-menu{
+    padding-top: 70px;
+}
+
+.content-menu ul{
+    justify-content: center;
+    font-size: 12px;
+}
+
+.content-menu li :hover{
+    border-bottom: 3px solid #adff2f;
+}
+
+.home :hover{
+    border-left: 3px solid #adff2f;
+}
+
+.wrap{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 50%);
+
+}
+
+.row-img img{
+    max-width: 150px;
+}
+
+.row-text{
+    max-width: 150px;
+}
+
+.row-text span{
+    text-align: center;
 }
 
 /* content nedia */
@@ -192,13 +264,10 @@ footer{
     width: 100%;
     height: 100px;
     justify-content: space-between;
-
-
-    background-color: purple;
+    background-color: #282828;
 }
 
 .col-left, .col-right{
-    /* width: 20%; */
 
     background-color: cyan;
 }
@@ -210,11 +279,13 @@ footer{
 }
 
 .col-center{
-    /* width: calc(100% - 40%); */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
 
     background-color: darkkhaki;
+}
+
+.down{
+    justify-content: center;
+    align-items: center;
 }
 
 /* END FOOTER */
