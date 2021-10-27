@@ -10,6 +10,14 @@ body{
 }
 
 /* COMMON */
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
 .float{
     float: left;
 }
@@ -44,7 +52,6 @@ body{
 
 .margin-row{
     margin: 10px;
-
 }
 
 .margin{
@@ -86,6 +93,10 @@ img{
     font-size: 12px;
 }
 
+.font-w{
+    font-weight: 700;
+}
+
 .white{
     color: #ffffff;
 }
@@ -117,6 +128,11 @@ img{
     padding: 8px 25px;
     border: 2px solid #a4a4a6;
     border-radius: 20px;
+    transition: 0,5s;
+}
+
+.btn:hover {
+    padding: 10px 30px;
 }
 
 /* upgrade nedia */
@@ -132,7 +148,6 @@ img{
     width: 170px;
     padding: 10px;
     overflow: hidden;
-
     background-color: #000000;
 }
 
@@ -159,7 +174,6 @@ img{
     text-align: center;
     line-height: 30px;
     vertical-align: middle;
-
 }
 
 .playlist{
@@ -237,10 +251,23 @@ img{
     width: 100%;
 }
 
-.row-img :hover{
-    filter: grayscale(1);
-
+.b{
+    display: none;
 }
+
+.img-play{
+    width: 100%;
+}
+
+.margin-row :hover .a{
+    display: none;
+}
+
+.margin-row :hover .b{
+    display: inline;
+    filter: grayscale(1);
+}
+
 
 .row-img img{
     max-width: 150px;
