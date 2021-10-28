@@ -50,12 +50,12 @@ body{
     list-style-type: none;
 }
 
-.margin-row{
-    margin: 10px;
-}
-
 .margin{
     margin: 0% 3%;
+}
+
+.marginl{
+    margin-left: 10px;
 }
 
 .margin-b{
@@ -74,8 +74,8 @@ img{
     width: 40%;
     height: 4px;
     background-color: #5a5a5a;
-    /* display: inline-block; */
     border-radius: 5px;
+    margin: 0% 2%;
 }
 
 .barr-in{
@@ -158,6 +158,14 @@ img{
 
 .logo .logo-small{
     display: none;
+}
+
+nav a{
+    margin-left: 10px;
+}
+
+nav a :hover{
+    border-left: 3px solid #adff2f;
 }
 
 .library-icon{
@@ -243,9 +251,6 @@ img{
     border-bottom: 3px solid #adff2f;
 }
 
-.home :hover{
-    border-left: 3px solid #adff2f;
-}
 
 .row-1{
     width: 100%;
@@ -262,7 +267,11 @@ img{
 }
 
 .after .fa-play-circle{
-    transform: translate(50%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
 }
 
 .row-img:hover .after {
