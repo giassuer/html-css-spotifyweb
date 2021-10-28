@@ -251,17 +251,24 @@ img{
     width: 100%;
 }
 
-.b{
+.row-img .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: none;
+    color: #FFF;
 }
 
-.a :hover{
-    display: none;
+.after .fa-play-circle{
+    transform: translate(20px, 20px);
+    transform: scale(10);
 }
 
-.margin-row :hover .b{
-    display: inline;
-    filter: grayscale(1);
+.row-img:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
 }
 
 .row-img img{
